@@ -10,13 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="icon" href="./assets/img/ez-favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Raleway = Sans Serif // Roboto = Serif -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;800&family=Roboto+Slab:wght@100;200;300;400;500;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="gridGeneral">
-        <div class="gridHeader">
             <header>
                 <nav>
                     <ul>
@@ -26,41 +25,32 @@
                     </ul>
                 </nav>
             </header>
-        </div>
-
-    <div class="gridMain">
         <main>
             <div class="main__div">
-                <div><i id="avatar" class="fa-solid fa-circle-user"></i></div>
-                <div><h1>Ezequiel Martínez</h1></div>
+                <div class="animate__animated animate__fadeInDown"><i id="avatar" class="fa-solid fa-circle-user"></i></div>
+                <div><h1 class="animate__animated animate__fadeInDown">Ezequiel Martínez</h1></div>
             </div>
         </main>
-    </div>
     <!-- cards -->
-        <div class="gridSection">
             <section class="main__section">
-                <div class="card">
+                <div class="card animate__animated animate__flipInX">
                     <img src="./assets/img/d150x100.png" alt="dummyImg1">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reiciendis impedit,</p>
                 </div>
-                <div class="card">
+                <div class="card animate__animated animate__flipInX">
                     <img src="./assets/img/d150x100.png" alt="dummyImg2">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reiciendis impedit,</p>
                 </div>
-                <div class="card">
+                <div class="card animate__animated animate__flipInX">
                     <img src="./assets/img/d150x100.png" alt="dummyImg3">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reiciendis impedit,</p>
                 </div>
             </section>
-        </div>
-        <div class="gridFooter">
             <footer>
                 <div class="footer__div">
                     <div><i id=copy class="fa-solid fa-copyright"></i></div>
                     <div class="footer__div__p"><p>Todos los derechos reservados.</p></div>
                 </div>
             </footer>
-        </div>
-    </div>
 </body>
 </html>
