@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Fuentes:
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+
+/* Grid General */
+.gridGeneral {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    justify-items: stretch;
+    align-items: stretch;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gridHeader gridHeader gridHeader gridHeader"
+      "gridMain gridMain gridMain gridMain"
+      "gridSection gridSection gridSection gridSection"
+      "gridFooter gridFooter gridFooter gridFooter";
+  }
+  
+  .gridHeader { grid-area: gridHeader; }
+  .gridMain { grid-area: gridMain; }
+  .gridSection { grid-area: gridSection; }
+  .gridFooter { grid-area: gridFooter; }
+
+  @media screen and (min-width: 768px) {
+    .gridGeneral {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        justify-items: stretch;
+        align-items: stretch;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "gridHeader gridHeader"
+          "gridMain gridMain"
+          "gridSection gridSection"
+          "gridFooter gridFooter";
+    }
+}
+
+@media screen and (min-width: 420px) {
+    .gridGeneral {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: stretch;
+        align-items: stretch;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "gridHeader"
+          "gridMain"
+          "gridSection"
+          "gridFooter";
+    }
+}
+
+/* Grid General */
+
+header nav{
+    background-color: #000A33;
+    font-family: 'Raleway';
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 21px;
+    padding: 15px 0 15px 15px;
+    border-bottom: 1px solid black;
+}
+
+/* Texto de NavBar */
+header nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    color: #dadadc
+}
+
+header nav ul li{
+    margin: 0 5px;
+}
+
+header nav ul a{
+    text-decoration-line: none;
+    color: #dadadc;
+}
+
+/* Ezequiel Martínez */
+.main__div{
+    background-color: #000A33;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230071DD'/%3E%3Cstop offset='1' stop-color='%23000A33'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%2332FCFF' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%2332FCFF' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    border-bottom: 1px solid #000A33;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    height: 100%;
+}
+
+main div h1{
+    margin-bottom: 30%;
+    font-family: 'Roboto Slab';
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.main__div div{
+    margin: 10px;
+
+}
+
+#avatar{
+    margin-top: 80%;
+    font-size: 125px;
+    color: rgb(255, 255, 255);
+}
+
+/* contenedor de cards */
+.main__section{
+    display: flex;
+    flex-direction: wrap ;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    padding: 50px 0;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid rgb(121, 121, 121);
+    border-radius: 10px;
+    box-shadow:  10px 10px 20px #d3d3d3, -10px -10px 20px #ededed;
+    padding: 5px;
+    margin: 10px 10px;
+    width: 200px;
+    height: 250px; 
+}
+
+.card p, img {
+    margin: auto;
+}
+
+.footer__div{
+    background-color: #000A33;
+    font-family: 'Raleway';
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+    padding: 15px 0 15px 15px;
+}
+
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: #dadadc;
+    
+}
+
+.footer__div__p{
+    width: 150px;
+    height: 25px;
+}
+
+#copy{
+    font-size: 25px;
+}
+
+/* --- Contact html --- */
+
+/* Grid Contact */
+.gridContacto {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+.gridHeaderContacto { grid-area: 1 / 1 / 2 / 5; }
+.gridFooterContacto { grid-area: 4 / 1 / 5 / 5; }
+.gridMainContacto { grid-area: 2 / 1 / 4 / 5; }
+.gridMainTitulo { grid-area: 2 / 1 / 3 / 5; }
+.gridFormularioContacto { grid-area: 3 / 1 / 4 / 3; }
+.gridSobreMiContacto { grid-area: 3 / 3 / 4 / 5; }
+
+@media screen and (min-width: 768px) {
+    .gridContacto {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+      }
+      .gridHeaderContacto { grid-area: 1 / 1; }
+      .gridFooterContacto { grid-area: 4 / 1; }
+      .gridMainContacto { grid-area: 2 / 1; }
+      .gridMainTitulo { grid-area: 2 / 1; }
+      .gridFormularioContacto { grid-area: 3 / 1; }
+      .gridSobreMiContacto { grid-area: 3 / 3; }
+
+}
+@media screen and (min-width: 420px) {
+    .gridContacto {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+      }
+      .gridHeaderContacto { grid-area: 1; }
+      .gridFooterContacto { grid-area: 4; }
+      .gridMainContacto { grid-area: 2; }
+      .gridMainTitulo { grid-area: 2; }
+      .gridFormularioContacto { grid-area: 3; }
+      .gridSobreMiContacto { grid-area: 3; }
+
+}
+
+/* Grid Contact */
+
+.contact__main__h1 {
+    font-family: 'Roboto Slab';
+    font-size: 30px;
+    font-weight: 400;
+    margin: 1rem 2rem;
+}
+
+.contact__main__line {
+    border-bottom: 1px solid black;
+    margin: 0 2rem;
+}
+
+/* Padre de los div's */
+.contact__section__div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    margin: 2rem 2rem;
+
+}
+/* contenedores de formulario & sobre mi */
+.contact__section__div__div {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    width: 90%;
+    /* height: 50%; */
+    margin: 2rem 2rem;
+}
+
+main section div div h5 {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 15px;
+    margin: 5px 5px;
+
+}
+
+.divBoxFormulario{
+    display: flex ;
+    border: 1px solid black;
+    font-size: 15px;
+    width: auto;
+    height: 18px;
+    margin-top: 1px;
+    
+}
+
+.divBoxFormularioM{
+    display: flex ;
+    border: 1px solid black;
+    font-size: 15px;
+    width: auto;
+    height: 10rem;
+}
+
+main section div div h2 {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+main section div div p {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/* -- Gallery -- */
+
+/* Grid Gallery */
+.gridGaleria {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "gridHeader gridHeader gridHeader gridHeader"
+      "gridMainGaleria gridMainGaleria gridMainGaleria gridMainGaleria"
+      "gridSectionGaleria gridSectionGaleria gridSectionGaleria gridSectionGaleria"
+      "gridFooter gridFooter gridFooter gridFooter";
+  }
+  
+  .gridMainGaleria { grid-area: gridMainGaleria; }
+  .gridSectionGaleria { grid-area: gridSectionGaleria; }
+
+  @media screen and (min-width: 768px) {
+    .gridGaleria {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "gridHeader gridHeader"
+          "gridMainGaleria gridMainGaleria"
+          "gridSectionGaleria gridSectionGaleria"
+          "gridFooter gridFooter";
+      }
+}
+@media screen and (min-width: 420px) {
+    .gridGaleria {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "gridHeader"
+          "gridMainGaleria"
+          "gridSectionGaleria"
+          "gridFooterr";
+      }
+}
+
+  /* Grid Gallery  */
+
+.gallery__section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem;
+}
+
+.photo_card {
+    border: 1px solid gray;
+    margin: 3px;
+    font-size: 0px;
+}
