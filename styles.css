@@ -92,7 +92,8 @@ main div h1{
 /* contenedor de cards */
 .main__section{
     display: flex;
-    flex-direction: wrap ;
+    flex-wrap: wrap ;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     background: rgb(255,255,255);
@@ -115,8 +116,15 @@ main div h1{
     box-shadow:  10px 10px 20px #d3d3d3, -10px -10px 20px #ededed;
     padding: 5px;
     margin: 10px 10px;
-    width: 200px;
-    height: 250px; 
+    width: 300px;
+    height: 350px; 
+}
+
+
+.shadowcss {
+    box-shadow: 0px 1px 11px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 11px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 11px 0px rgba(0,0,0,0.75);
 }
 
 .card p, img {
@@ -271,6 +279,7 @@ main section div div p {
     -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.35);
     box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.35);
     position: relative;
+    
 }
 .photo_card::before {
 	position: absolute;
