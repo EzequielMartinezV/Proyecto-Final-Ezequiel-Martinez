@@ -1,0 +1,68 @@
+// Contacto html//
+.contact__main__h1 {
+    font-family: $font-secundaria;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 1rem 2rem;
+}
+
+.contact__main__line {
+    border-bottom: 1px solid $color-negro;
+    margin: 0 2rem;
+}
+
+//Padre de los div's//
+.contact__section__div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 2rem;
+}
+/* contenedores de formulario & sobre mi */
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 300px;
+}
+
+.contact__sobreMi{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 50%;
+}
+
+/* h5 del acordeon*/
+main section div div h5 {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 15px;
+    margin: 5px 5px;
+}
+
+.sobreMih2 {
+    font-family: 'Raleway';
+    font-weight: 500;
+    font-size: 25px;
+    margin-left: 2rem;
+}
+
+main section div div p {
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0rem 2rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff !important;
+    background-color: $color-principal !important;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+
+.accordion-body {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(242,242,242,1) 100%);
+}
