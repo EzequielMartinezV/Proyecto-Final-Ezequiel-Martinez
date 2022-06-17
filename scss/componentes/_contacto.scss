@@ -13,11 +13,9 @@
 
 //Padre de los div's//
 .contact__section__div {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    @extend %flexwraprow;
     justify-content: space-between;
-    margin: 2rem 2rem;
+    margin: map-get($rems, x2)
 }
 /* contenedores de formulario & sobre mi */
 .contact__form {
@@ -28,9 +26,7 @@
 }
 
 .contact__sobreMi{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    @extend %flexwraprow;
     width: 50%;
 }
 
